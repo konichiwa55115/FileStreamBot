@@ -7,16 +7,16 @@ load_dotenv()
 
 
 class Var(object):
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
+    API_ID = int(17983098)
+    API_HASH = "ee28199396e0925f1f44d945ac174f64"
+    BOT_TOKEN = "6165770459:AAFEgNaxaLJDGJGw6NIstrwtyuvw3EYebFs"
     SESSION_NAME = str(getenv('SESSION_NAME', 'AviStreamBot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
-    PORT = int(getenv('PORT', 8080))
+    BIN_CHANNEL = int(-1001683878954)
+    PORT = int(getenv('PORT', 10000))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    OWNER_ID = int(getenv('OWNER_ID', '797848243'))
+    OWNER_ID = int(getenv('OWNER_ID', '1227193881'))
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     if 'DYNO' in environ:
@@ -24,10 +24,8 @@ class Var(object):
         APP_NAME = str(getenv('APP_NAME'))
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-    URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
-        "http://{}:{}/".format(FQDN, PORT)
-    DATABASE_URL = str(getenv('DATABASE_URL'))
+    FQDN = "https://henlo5154115515151665.onrender.com:10000"
+    DATABASE_URL = "mongodb+srv://Bala7a19871:Ibntaymya1.@cluster0.5mtsc.mongodb.net/?retryWrites=true&w=majority"
     PING_INTERVAL = int(getenv('PING_INTERVAL', '500'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001296894100")).split()))
