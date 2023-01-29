@@ -9,7 +9,7 @@ load_dotenv()
 class Var(object):
     API_ID = int(17983098)
     API_HASH = "ee28199396e0925f1f44d945ac174f64"
-    BOT_TOKEN = "6165770459:AAFEgNaxaLJDGJGw6NIstrwtyuvw3EYebFs"
+    BOT_TOKEN = "6007861522:AAFnbVI_PLo5C1eDjddTfpxxpOFjeFt_xKo"
     SESSION_NAME = str(getenv('SESSION_NAME', 'AviStreamBot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
